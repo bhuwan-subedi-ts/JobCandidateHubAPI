@@ -11,5 +11,6 @@ namespace JobCandidateHub.Application.Interfaces
     public interface ICandidateService
     {
         Task<Candidate> UpsertCandidate(CandidateDto candidateDto);
+        Task<List<Candidate>> GetCandidatesList();
     }
 }

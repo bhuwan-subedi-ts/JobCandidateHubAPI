@@ -2,6 +2,7 @@
 using JobCandidateHub.Domain.Interfaces;
 using JobCandidateHub.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Collections;
 
 namespace JobCandidateHub.Infrastructure.Repositories
 {
@@ -29,6 +30,10 @@ namespace JobCandidateHub.Infrastructure.Repositories
         {
             _dbContext.Candidates.Update(candidate);
             await _dbContext.SaveChangesAsync();
+        }
+        public async Task<List<Candidate>> GetAllAsync()
+        {
+            return await _dbContext.Candidates.ToListAsync();
         }
     }
 }

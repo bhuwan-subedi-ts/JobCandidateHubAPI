@@ -35,5 +35,14 @@ namespace JobCandidateHub.Application.Services
 
             return candidate;
         }
+        public async Task<List<Candidate>> GetCandidatesList()
+        {
+            var candidates = await _candidateRepository.GetAllAsync();
+            if(candidates.Count > 0)
+            {
+                return candidates;
+            }
+            return new List<Candidate> { };
+        }
     }
 }

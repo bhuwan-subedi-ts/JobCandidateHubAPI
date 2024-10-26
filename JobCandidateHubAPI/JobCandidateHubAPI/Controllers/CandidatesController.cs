@@ -18,6 +18,11 @@ namespace JobCandidateHubAPI.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Insert or Update Candidate information into DB
+        /// </summary>
+        /// <param name="candidateDto"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> UpsertCandidate([FromBody] CandidateDto candidateDto)
         {
@@ -28,11 +33,15 @@ namespace JobCandidateHubAPI.Controllers
 
             return Ok(result);
         }
-        [HttpGet("test")]
-        public IActionResult TestDatabaseConnection()
+        /// <summary>
+        /// List all the candidates from the Database table
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("List")]
+        public async Task<IActionResult> GetCandidatesList()
         {
-            var count = _context.Candidates.Count();
-            return Ok(new { Count = count });
+            var result = await _candidateService.GetCandidatesList();
+            return Ok(result);
         }
     }
 }

@@ -7,5 +7,6 @@ namespace JobCandidateHub.Domain.Interfaces
         Task<Candidate> GetByEmailAsync(string email);
         Task AddAsync(Candidate candidate);
         Task UpdateAsync(Candidate candidate);
+        Task<List<Candidate>> GetAllAsync();
     }
 }
