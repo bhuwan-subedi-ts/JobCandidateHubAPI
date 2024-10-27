@@ -5,11 +5,13 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHubAPI", "JobCandidateHubAPI\JobCandidateHubAPI.csproj", "{36F26472-DF37-4677-8CA5-FFA404E0679B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHub.Domain", "JobCandidateHubAPI.Domain\JobCandidateHub.Domain.csproj", "{26E867EA-A21C-4CD2-9DAB-40B028D57463}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHub.Domain", "JobCandidateHubAPI.Domain\JobCandidateHub.Domain.csproj", "{26E867EA-A21C-4CD2-9DAB-40B028D57463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHub.Application", "JobCandidateHub.Application\JobCandidateHub.Application.csproj", "{E11D0985-6BBC-4542-8AC1-46166EE5E7C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHub.Application", "JobCandidateHub.Application\JobCandidateHub.Application.csproj", "{E11D0985-6BBC-4542-8AC1-46166EE5E7C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHub.Infrastructure", "JobCandidateHub.Infrastructure\JobCandidateHub.Infrastructure.csproj", "{4C13C484-B85C-45B0-B740-6CCEC01FEB9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHub.Infrastructure", "JobCandidateHub.Infrastructure\JobCandidateHub.Infrastructure.csproj", "{4C13C484-B85C-45B0-B740-6CCEC01FEB9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHubAPI.Tests", "JobCandidateHubAPITest\JobCandidateHubAPI.Tests.csproj", "{138B113B-F677-4BB1-89D7-EEA9874D0EE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4C13C484-B85C-45B0-B740-6CCEC01FEB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C13C484-B85C-45B0-B740-6CCEC01FEB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C13C484-B85C-45B0-B740-6CCEC01FEB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138B113B-F677-4BB1-89D7-EEA9874D0EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138B113B-F677-4BB1-89D7-EEA9874D0EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138B113B-F677-4BB1-89D7-EEA9874D0EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138B113B-F677-4BB1-89D7-EEA9874D0EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
